@@ -4,7 +4,7 @@ Este repositorio demuestra una implementación robusta de MiDaS (Deep Learning p
 
 Pipeline completo: desde captura de imágenes hasta calibración geométrica y optimización de métricas de distancia.
 
-Técnicas avanzadas: normalización de disparidad, ajuste de escala métrica y compensación de distorsiones ópticas.
+Deteccion de bojetoc: usando YOLOv8 se destecta personas presentes en la escena para medir la distancia que los separa
 
 Código modular: fácil extensión a cámaras RGB-D o integración con SLAM/ROS.
 
