@@ -9,3 +9,6 @@ Técnicas avanzadas: normalización de disparidad, ajuste de escala métrica y c
 Código modular: fácil extensión a cámaras RGB-D o integración con SLAM/ROS.
 
 Casos de uso: navegación autónoma, realidad aumentada y análisis métrico en entornos no estructurados.
+
+
+Parte del código ha sido generao con AI
