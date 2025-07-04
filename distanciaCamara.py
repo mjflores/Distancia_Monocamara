@@ -45,6 +45,8 @@ class DistanciaMonoCamara:
         :param use_cuda: Usa GPU si es posible
         """
         self.resize = resize
+        if len(depth_range) != 2:
+            raise ValueError("depth_range debe ser una tupla de 2 elementos (min, max).")
         self.min_distance, self.max_distance = depth_range
 
         # Seleccionar dispositivo
@@ -58,7 +60,8 @@ class DistanciaMonoCamara:
         # Transformaciones
         self.transform = transforms.Compose([
             transforms.ToTensor(),
-            transforms.Resize(resize)
+            #transforms.Resize(resize)
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
         ])
 
     def estimate_depth_map(self, frame):
