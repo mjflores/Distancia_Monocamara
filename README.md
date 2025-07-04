@@ -3,6 +3,7 @@
 Este repositorio presenta una implementación robusta y modular para la estimación de distancia objeto-cámara utilizando visión monocular. Se basa en MiDaS (Monocular Depth Estimation) , un modelo de deep learning, para obtener medidas precisas de profundidad en tiempo real, enfocado especialmente en personas.
 
 🔍 Características principales:
+
 Pipeline completo : desde la captura de video hasta la calibración geométrica y optimización de métricas de distancia.
 
 Detección de objetos : se utiliza YOLOv8 para detectar personas en la escena y calcular la distancia que las separa de la cámara.
